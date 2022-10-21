@@ -14,16 +14,15 @@
     <p>Questão 3: A</p>
     <p>Questão 4: A</p>
     <p>Questão 5: B</p>
+    <p>Questão 6: C</p>
     
 
     <?php
-        $gabaritoOficial = ['C', 'E', 'A', 'A', 'B'];
-        $gabaritoAluno = [$_POST['alternativaQuestao1'], $_POST['alternativaQuestao2'], $_POST['alternativaQuestao3'], $_POST['alternativaQuestao4'], $_POST['alternativaQuestao5']];
+        $gabaritoOficial = ['B', 'A', 'E', 'B', 'A', 'C'];
+        $gabaritoAluno = [$_POST['alternativaQuestao1'], $_POST['alternativaQuestao2'], $_POST['alternativaQuestao3'], $_POST['alternativaQuestao4'], $_POST['alternativaQuestao5'], $_POST['alternativaQuestao6']];
         echo "<h2> Seu Gabarito: </h2>";
-        for($i = 0; $i < count($gabaritoAluno); $i++) {
-            $i++;
+        for($i = 1; $i <= count($gabaritoAluno); $i++) {
             echo "Questão $i: ", $gabaritoAluno[$i - 1], "<br><br>";
-            $i--;
         }
     ?>
 
@@ -57,6 +56,12 @@
             echo "<p style='color:green'> Questão 5: Correta </p>";
         } else {
             echo "<p style='color:red'> Questão 5: Incorreta </p>";
+        }
+
+        if($gabaritoOficial[5] == $gabaritoAluno[5]) {
+            echo "<p style='color:green'> Questão 6: Correta </p>";
+        } else {
+            echo "<p style='color:red'> Questão 6: Incorreta </p>";
         }
     ?>
 </body>
