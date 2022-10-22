@@ -8,21 +8,18 @@
     <title>Gabarito</title>
 </head>
 <body>
-    <h2>GABARITO</h2>
-    <p>Questão 1: C</p>
-    <p>Questão 2: E</p>
-    <p>Questão 3: A</p>
-    <p>Questão 4: A</p>
-    <p>Questão 5: B</p>
-    <p>Questão 6: C</p>
-    
 
     <?php
         $gabaritoOficial = ['B', 'A', 'E', 'B', 'A', 'C'];
         $gabaritoAluno = [$_POST['alternativaQuestao1'], $_POST['alternativaQuestao2'], $_POST['alternativaQuestao3'], $_POST['alternativaQuestao4'], $_POST['alternativaQuestao5'], $_POST['alternativaQuestao6']];
+        echo "<h2>GAbarito Oficial: </h2>";
+        for($x = 1; $x <= count($gabaritoOficial); $x++) {
+            echo "<p>Questão $x: ", $gabaritoOficial[$x - 1], "</p>"; 
+        }
+
         echo "<h2> Seu Gabarito: </h2>";
         for($i = 1; $i <= count($gabaritoAluno); $i++) {
-            echo "Questão $i: ", $gabaritoAluno[$i - 1], "<br><br>";
+            echo "<p>Questão $i: ", $gabaritoAluno[$i - 1], "</p>";
         }
     ?>
 
