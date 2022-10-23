@@ -15,19 +15,22 @@
 
     <main>
         <div class="gabaritos">
-        <?php
-            $gabaritoOficial = ['D', 'D', 'B', 'A', 'A'];
-            $gabaritoAluno = [$_POST['alternativaQuestao1'], $_POST['alternativaQuestao2'], $_POST['alternativaQuestao3'], $_POST['alternativaQuestao4'], $_POST['alternativaQuestao5']];
-            echo "<h2>GAbarito Oficial: </h2>";
-            for($x = 1; $x <= count($gabaritoOficial); $x++) {
-                echo "<p>Questão $x: ", $gabaritoOficial[$x - 1], "</p>"; 
-            }
+            <?php
+                $gabaritoOficial = ['D', 'D', 'B', 'A', 'A'];
+                $gabaritoAluno = [];
+                for($i = 1; $i <= count($gabaritoOficial); $i++) {
+                    $gabaritoAluno[] = $_POST["alternativaQuestao$i"];
+                }
+                echo "<h2>Gabarito Oficial: </h2>";
+                for($x = 1; $x <= count($gabaritoOficial); $x++) {
+                    echo "<p>Questão $x: ", $gabaritoOficial[$x - 1], "</p>"; 
+                }
 
-            echo "<h2> Seu Gabarito: </h2>";
-            for($i = 1; $i <= count($gabaritoAluno); $i++) {
-                echo "<p>Questão $i: ", $gabaritoAluno[$i - 1], "</p>";
-            }
-        ?>
+                echo "<h2> Seu Gabarito: </h2>";
+                for($i = 1; $i <= count($gabaritoAluno); $i++) {
+                    echo "<p>Questão $i: ", $gabaritoAluno[$i - 1], "</p>";
+                }
+            ?>
         </div>
 
         <div class="corretasOuIncorretas">
