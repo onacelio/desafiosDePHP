@@ -29,11 +29,13 @@
     if(isset($_GET['clear'])) {
         unset($_SESSION['questions']);
         unset($_SESSION['corrects_alternatives']);
+        unset($_SESSION['alternatives']);
     }
 
     if(isset($_GET['key'])) {
         array_splice($_SESSION['questions'], $_GET['key'], 1);
         array_splice($_SESSION['corrects_alternatives'], $_GET['key'], 1);
+        array_splice($_SESSION['alternatives'], $_GET['key'], 1);
         unset($_GET['key']);
     }
 ?>
