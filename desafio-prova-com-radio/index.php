@@ -17,7 +17,7 @@
 <body>
 
     <header>
-        LOGIN DO ALUNO/PROFESSOR
+        <h1>LOGIN DO ALUNO/PROFESSOR</h1>
     </header>
 
     <main>
@@ -26,7 +26,7 @@
             <input type="text" name="nome" value="" required><br>
             <label for="senha">Senha</label>
             <input type="password" name="senha" id="senha" value="" required><br>
-            <input type="submit" value="Entrar">
+            <button type="submit">Enviar</button>
         </form>
     </main>
 </body>

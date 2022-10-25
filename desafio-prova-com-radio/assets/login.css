@@ -5,11 +5,43 @@
 }
 
 body {
-    background-color: blueviolet;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #1F2D41;
+    color: #F04950;
 }
 
 main {
+    height: 90vh;
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+}
+
+main input {
+    height: 32px;
+    margin: 4px 0;
+    padding-left: 12px;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+main button {
+    background: #cd72dd;
+    height: 32px;
+    border: none;
+    width: 75px;
+    border-radius: 4px;
+    color: #fff;
+    margin: 4px 0;
 }

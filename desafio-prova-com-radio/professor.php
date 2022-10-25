@@ -61,21 +61,21 @@
         <div class="form">
             <form action="" method="get">
                 <label for="question_name">Questão: </label>
-                <input type="text" name="question_name" placeholder="Questão da prova">
+                <input type="text" name="question_name" placeholder="Questão da prova" required>
                 <label for="correct_alternative">Alternativa Correta: </label>
                 <div class="radio">
-                    <input type="radio" name="correct_alternative" value="A"><p>A</p></input>
-                    <input type="radio" name="correct_alternative" value="B"><p>B</p></input>
-                    <input type="radio" name="correct_alternative" value="C"><p>C</p></input>
-                    <input type="radio" name="correct_alternative" value="D"><p>D</p></input>
-                    <input type="radio" name="correct_alternative" value="E"><p>E</p></input>
+                    <input type="radio" name="correct_alternative" value="A" required><p>A</p></input>
+                    <input type="radio" name="correct_alternative" value="B" required><p>B</p></input>
+                    <input type="radio" name="correct_alternative" value="C" required><p>C</p></input>
+                    <input type="radio" name="correct_alternative" value="D" required><p>D</p></input>
+                    <input type="radio" name="correct_alternative" value="E" required><p>E</p></input>
                 </div>
                 <label for="">Alternativas para marcar: </label>
-                <input type="text" name="alternativaA" placeholder="Adicione a alternativa para A">
-                <input type="text" name="alternativaB" placeholder="Adicione a alternativa para B">
-                <input type="text" name="alternativaC" placeholder="Adicione a alternativa para C">
-                <input type="text" name="alternativaD" placeholder="Adicione a alternativa para D">
-                <input type="text" name="alternativaE" placeholder="Adicione a alternativa para E">
+                <input type="text" name="alternativaA" placeholder="Adicione a alternativa para A" required>
+                <input type="text" name="alternativaB" placeholder="Adicione a alternativa para B" required>
+                <input type="text" name="alternativaC" placeholder="Adicione a alternativa para C" required>
+                <input type="text" name="alternativaD" placeholder="Adicione a alternativa para D" required>
+                <input type="text" name="alternativaE" placeholder="Adicione a alternativa para E" required>
                 <button type="submit">Adicionar questão</button>
             </form>
 
